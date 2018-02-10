@@ -1,1 +1,1 @@
-# diving-project-x
+# Diving Project X
