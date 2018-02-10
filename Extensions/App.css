@@ -1,0 +1,285 @@
+
+
+body {
+    background-image: url('Images/dives.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+      font-size: 17px;
+    background-color: #EAE8FF;
+    color: #4A6FA5;
+   
+
+    background-position: 50% 0%;
+
+
+}
+
+#frontBody {
+        background-image: url('Images/clifcoast.jpg');
+        background-repeat: no-repeat;
+
+
+}
+
+
+
+#content {
+    text-align: center;
+    text-decoration-style: solid;
+    text-decoration-color: antiquewhite;
+     color: #4A6FA5;
+ padding-top: 10%; 
+    padding-bottom: 10%;
+	/* text-shadow: 0px 4px 3px white,
+	0px 8px 13px white,
+    0px 18px 28px grey;  */
+    font-weight: bold;
+
+
+}
+a {
+
+    color: #4F6D7A;
+    
+}
+    
+.logo-main {
+    image-orientation: center;
+}
+#navHello2 {
+    z-index: 1;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 1% !important;
+    padding: 15;
+    position: fixed;
+    image-orientation: top;
+    text-align: center;
+    
+   width: 100%;
+
+}
+
+
+a:hover { 
+    /* background-color: #BFC0C0; */
+    color: #7FD8BE; 
+}
+
+
+ul a {
+    color: #FCAB64;
+    font-weight: bold;
+}
+button {
+    background-color: grey;
+}
+
+.frontP {
+    padding-bottom: 10%;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration-style: solid;
+    text-decoration-color: antiquewhite;
+    color: #FCAB64;
+	padding-top: 20%;
+	text-shadow: 0px 4px 3px white,
+	0px 8px 13px white,
+	0px 18px 28px grey;
+}
+
+h4 {
+    color: #273469;
+
+}
+
+
+
+
+
+
+/* footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-image:url("Images/FN.jpg");
+    
+    text-align: center;
+    margin-top: 100em;
+}
+
+
+#jumbo { 
+    border-width: 2em;
+    background-image:url("Images/FN4.jpg");
+    background-position: center;
+    margin-top: 5em;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#frow {
+    padding: 10 10;
+    margin: 10 10;
+}
+
+.social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+ .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+ .social-networks a:hover {
+    text-decoration: none;
+}
+
+.facebook:hover {
+    color: #0077e2;
+}
+
+.google:hover {
+    color: #ef1a1a;
+}
+
+.twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .footer-copyright p {
+    padding-top: 0%;
+
+}
+
+#myFooter {
+
+    margin-top: 5em;
+}
+
+
+/* End footer */
+
+
+#contact {
+    padding: 300 20;
+}
+
+
+/* frontpage */
+#Frontjumbo {
+    /* background-color: #EAE8FF; */
+    
+    text-align: left;
+    color: #4A6FA5;
+    font-size: 17px;
+    padding: 5em 7em 0em 7em;
+    margin-top: 7em;
+
+}
+
+/* front */
+
+h3 {
+    color: #FCAB64;
+}
+
+
+hr {
+        color: #FCAB64;
+       
+
+}
+
+iframe {
+    float: left;
+}
+
+
+
+
+.jumbotron {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.banner {
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+
+}

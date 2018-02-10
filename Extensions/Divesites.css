@@ -1,0 +1,108 @@
+
+
+
+h4 {
+    color: #818479;
+}
+
+#gallery {
+    align-content: center
+}
+
+hr {
+    margin-bottom: 5em;
+}
+
+
+
+/* Try out  */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #EAE8FF;
+    padding: 10px;
+    text-align: center;
+    /* color: #9D8189; */
+    color: #4A6FA5;
+    font-size: 17px;
+}
+.content h4 {
+    color: #7FD8BE;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: 2;
+  font-weight: bold;
+  color: #FCAB64;
+  border-color: #FCAB64;
+  /* background-color: #FCEFEF; */
+}
+.btn:hover {
+    border: 2;
+  font-weight: bold;
+  color: #FCAB64;
+  border-color: #FCAB64;
+  background-color: #7FD8BE;
+
+}
+
+
+.buttoncontainer
+ {
+ align-items: center;
+    padding-top: 5em;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+
+
+}
