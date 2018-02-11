@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url('Images/dives.jpg');
+    background-image: url('Images/cliffs..jpg');
     background-repeat: no-repeat;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -9,19 +9,32 @@ body {
     background-color: #EAE8FF;
     color: #4A6FA5;
    
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: 50% 0%;
 
 
 }
 
-#frontBody {
-        background-image: url('Images/clifcoast.jpg');
-        background-repeat: no-repeat;
-
-
+/* Googlemaps */
+#mask {
+    overflow: hidden;
+    border-radius: 10%;
+    position: relative;
+    z-index: 99;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #000;
+}
+#mask iframe {
+    position: absolute;
+    border-radius: 10%;
+    top: 0; left: 0;
+    z-index: 50;
 }
 
+
+/* End of google maps */
 
 
 #content {
@@ -70,14 +83,14 @@ a:hover {
 
 ul a {
     color: #FCAB64;
-    font-weight: bold;
+  
 }
 button {
     background-color: grey;
 }
 
 .frontP {
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
 }
 
 
@@ -87,7 +100,8 @@ h1 {
     text-decoration-style: solid;
     text-decoration-color: antiquewhite;
     color: #FCAB64;
-	padding-top: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
 	text-shadow: 0px 4px 3px white,
 	0px 8px 13px white,
 	0px 18px 28px grey;
@@ -114,6 +128,8 @@ body {
 footer {
     position: absolute;
     left: 0;
+    color: #FCAB64;
+
     bottom: 0;
     height: 100px;
     width: 100%;
@@ -128,7 +144,7 @@ footer {
     border-width: 2em;
     background-image:url("Images/FN4.jpg");
     background-position: center;
-    margin-top: 5em;
+    /* margin-top: 5em; */
 }
 
 #myFooter ul {
@@ -202,6 +218,7 @@ footer {
 }
 
 
+
 /* frontpage */
 #Frontjumbo {
     /* background-color: #EAE8FF; */
@@ -211,6 +228,7 @@ footer {
     font-size: 17px;
     padding: 5em 7em 0em 7em;
     margin-top: 7em;
+    margin-bottom: 0em;
 
 }
 
@@ -232,11 +250,16 @@ iframe {
 }
 
 
-
+img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 .jumbotron {
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 21px;
+    padding: 0%;
+    padding-bottom: 5% ;
     text-align: center;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -281,5 +304,30 @@ iframe {
     padding-top: 5em;
     padding-bottom: 5em;
 
+
+}
+
+
+
+/* Image banners */
+
+.Imagecontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+      text-align: left;
+    color: #4A6FA5;
+        font-size: 17px;
+          padding: 5em 7em 0em 7em;
 
 }
