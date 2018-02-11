@@ -1,14 +1,13 @@
 
 
 body {
-    background-image: url('Images/cliffs..jpg');
+    background-image: url('Images/cliffs2..jpg');
     background-repeat: no-repeat;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
       font-size: 17px;
     background-color: #EAE8FF;
     color: #4A6FA5;
-   
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 0%;
@@ -90,7 +89,7 @@ button {
 }
 
 .frontP {
-    /* padding-bottom: 10%; */
+    padding-bottom: 10%;
 }
 
 
@@ -129,12 +128,10 @@ footer {
     position: absolute;
     left: 0;
     color: #FCAB64;
-
+    background-color: #EAE8FF;
     bottom: 0;
     height: 100px;
-    width: 100%;
-    background-image:url("Images/FN.jpg");
-    
+    width: 100%;    
     text-align: center;
     margin-top: 100em;
 }
@@ -142,7 +139,10 @@ footer {
 
 #jumbo { 
     border-width: 2em;
-    background-image:url("Images/FN4.jpg");
+    background-image:url("Images/yes.jpg");
+    color: #EAE8FF;
+   
+
     background-position: center;
     /* margin-top: 5em; */
 }
@@ -245,9 +245,6 @@ hr {
 
 }
 
-iframe {
-    margin: 5%;
-}
 
 
 img {
@@ -315,6 +312,8 @@ img {
     position: relative;
     text-align: center;
     color: white;
+    border-radius: 25px;
+
 }
 
 .centered {
@@ -396,7 +395,8 @@ th:last-child {
   
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
+
+
   color:#666B85;
   font-size:16px;
   font-weight:normal;
@@ -471,3 +471,14 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+
+
+
+img {
+        border-radius: 25px;
+
+}
+/* slideshow */
+
+
