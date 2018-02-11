@@ -164,7 +164,7 @@
                 <hr>
                 <img src="Extensions/Images/Padi-Logo.png" href="https://www.padi.com/">
             </div>
-            <table class="table-fill">
+            <table class="table-fill floatedTableLeft expandable">
                 <thead>
                 <tr>
                     <th class="text-left">Course</th>
@@ -207,53 +207,49 @@
             </table>
 
 
+            </div>
+            <table class="table-fill floatedTableRight expandable">
+                <thead>
+                <tr>
+                    <th class="text-left">Diving</th>
+                    <th>Description</th>
+                    <th class="text-left">Price</th>
+                </tr>
+                </thead>
+                <tbody class="table-hover">
+                <tr>
+                    <td class="text-left">1 Dive</td>
+                    <td> Learn the basics of scuba and Explore the sea!</td>
+                    <td class="text-left">$ 50,000.00</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">2 dives</td>
+                    <td> Description</td>
+                    <td class="text-left">$ 10,000.00</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">March</td>
+                    <td> Description</td>
+                    <td class="text-left">$ 85,000.00</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">April</td>
+                    <td> Description</td>
+                    <td class="text-left">$ 56,000.00</td>
+
+                </tr>
+                <tr>
+                    <td class="text-left">May</td>
+                    <td> Description</td>
+                    <td class="text-left">$ 98,000.00</td>
+
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="table-title">
-            <h4>Diving and rent</h4>
-            <hr>
-
-        </div>
-        <table class="table-fill">
-            <thead>
-            <tr>
-                <th class="text-left">Diving</th>
-                <th>Description</th>
-                <th class="text-left">Price</th>
-            </tr>
-            </thead>
-            <tbody class="table-hover">
-            <tr>
-                <td class="text-left">1 Dive</td>
-                <td> Learn the basics of scuba and Explore the sea!</td>
-                <td class="text-left">$ 50,000.00</td>
-
-            </tr>
-            <tr>
-                <td class="text-left">2 dives</td>
-                <td> Description</td>
-                <td class="text-left">$ 10,000.00</td>
-
-            </tr>
-            <tr>
-                <td class="text-left">March</td>
-                <td> Description</td>
-                <td class="text-left">$ 85,000.00</td>
-
-            </tr>
-            <tr>
-                <td class="text-left">April</td>
-                <td> Description</td>
-                <td class="text-left">$ 56,000.00</td>
-
-            </tr>
-            <tr>
-                <td class="text-left">May</td>
-                <td> Description</td>
-                <td class="text-left">$ 98,000.00</td>
-
-            </tr>
-            </tbody>
-        </table>
 
 
         <div class="Imagecontainer" id="contact">
@@ -430,6 +426,13 @@
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/0bb5c2e46e.js"></script>
+<script>
+    (function ($) {
+        $('table.expandable').find("thead").on("click", function () {
+            $(this).closest('table').find('tbody').toggle();
+        });
+    })(jQuery);
+</script>
 
 <script src="Extensions/Javascript.js"></script>
 
