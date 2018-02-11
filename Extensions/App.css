@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url('Images/dives.jpg');
+    background-image: url('Images/cliffs..jpg');
     background-repeat: no-repeat;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -9,19 +9,32 @@ body {
     background-color: #EAE8FF;
     color: #4A6FA5;
    
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: 50% 0%;
 
 
 }
 
-#frontBody {
-        background-image: url('Images/clifcoast.jpg');
-        background-repeat: no-repeat;
-
-
+/* Googlemaps */
+#mask {
+    overflow: hidden;
+    border-radius: 10%;
+    position: relative;
+    z-index: 99;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #000;
+}
+#mask iframe {
+    position: absolute;
+    border-radius: 10%;
+    top: 0; left: 0;
+    z-index: 50;
 }
 
+
+/* End of google maps */
 
 
 #content {
@@ -64,20 +77,20 @@ a {
 
 a:hover { 
     /* background-color: #BFC0C0; */
-    color: #7FD8BE; 
+    color: white; 
 }
 
 
 ul a {
     color: #FCAB64;
-    font-weight: bold;
+  
 }
 button {
     background-color: grey;
 }
 
 .frontP {
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
 }
 
 
@@ -87,7 +100,8 @@ h1 {
     text-decoration-style: solid;
     text-decoration-color: antiquewhite;
     color: #FCAB64;
-	padding-top: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
 	text-shadow: 0px 4px 3px white,
 	0px 8px 13px white,
 	0px 18px 28px grey;
@@ -114,6 +128,8 @@ body {
 footer {
     position: absolute;
     left: 0;
+    color: #FCAB64;
+
     bottom: 0;
     height: 100px;
     width: 100%;
@@ -128,7 +144,7 @@ footer {
     border-width: 2em;
     background-image:url("Images/FN4.jpg");
     background-position: center;
-    margin-top: 5em;
+    /* margin-top: 5em; */
 }
 
 #myFooter ul {
@@ -138,7 +154,7 @@ footer {
 }
 
 #myFooter h5 {
-    font-size: 18px;
+    font-size: 22px;
     color: white;
     font-weight: bold;
     margin-top: 30px;
@@ -202,6 +218,7 @@ footer {
 }
 
 
+
 /* frontpage */
 #Frontjumbo {
     /* background-color: #EAE8FF; */
@@ -211,6 +228,7 @@ footer {
     font-size: 17px;
     padding: 5em 7em 0em 7em;
     margin-top: 7em;
+    margin-bottom: 0em;
 
 }
 
@@ -228,15 +246,20 @@ hr {
 }
 
 iframe {
-    float: left;
+    margin: 5%;
 }
 
 
-
+img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 .jumbotron {
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 21px;
+    padding: 0%;
+    padding-bottom: 5% ;
     text-align: center;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -282,4 +305,169 @@ iframe {
     padding-bottom: 5em;
 
 
+}
+
+
+
+/* Image banners */
+
+.Imagecontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textblock {
+      text-align: left;
+    color: #4A6FA5;
+    font-size: 17px;
+    padding: 0em 7em 0em 7em;
+    /* margin-top: 5%; */
+    margin-bottom: 5%;
+}
+
+
+
+/* TABLES */
+
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #FCAB64;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: #FCAB64;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color: white;
+  background:#FCAB64;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid white;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#9A9BAB;
+  color:#FFFFFF;
+  border-top: 1px solid white;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#9A9BAB;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
 }
