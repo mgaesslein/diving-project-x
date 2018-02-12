@@ -1,0 +1,34 @@
+body {
+    
+    background-image: url('Images/cliffs2..jpg');
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    background-color: #E8DDB5;
+    color: #4A6FA5;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    width: 100%;
+    height: auto;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;   
+
+
+}
+
+
+
+
+        .jumbotron {
+       background-color: #E8DDB5
+ !important; 
+ opacity: 0.8;
+}
+
+  
+
