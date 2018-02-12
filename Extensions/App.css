@@ -1,17 +1,23 @@
 
 
 body {
-    background-image: url('Images/cliffs..jpg');
-    background-repeat: no-repeat;
+    background-image: url('Images/cliffs2..jpg');
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
       font-size: 17px;
-    background-color: #EAE8FF;
+    background-color: #E8DDB5;
     color: #4A6FA5;
 
     background-repeat: no-repeat;
+
     background-attachment: fixed;
-    background-position: 50% 0%;
+    background-position: 50% 50%;
+    width: 100%;
+    height: auto;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
 
 
 }
@@ -133,12 +139,10 @@ footer {
     position: absolute;
     left: 0;
     color: #FCAB64;
-
+    background-color: #EAE8FF;
     bottom: 0;
     height: 100px;
     width: 100%;
-    background-image:url("Images/FN.jpg");
-
     text-align: center;
     margin-top: 100em;
 }
@@ -146,7 +150,9 @@ footer {
 
 #jumbo {
     border-width: 2em;
-    background-image:url("Images/FN4.jpg");
+    background-image:url("Images/yes.jpg");
+
+
     background-position: center;
     /* margin-top: 5em; */
 }
@@ -230,7 +236,7 @@ footer {
     text-align: left;
     color: #4A6FA5;
     font-size: 17px;
-    padding: 5em 7em 0em 7em;
+    padding: 10% 10%;
     margin-top: 7em;
     margin-bottom: 0em;
 
@@ -249,9 +255,6 @@ hr {
 
 }
 
-iframe {
-    margin: 5%;
-}
 
 
 img {
@@ -319,6 +322,8 @@ img {
     position: relative;
     text-align: center;
     color: white;
+    border-radius: 25px;
+
 }
 
 .centered {
@@ -332,8 +337,6 @@ img {
       text-align: left;
     color: #4A6FA5;
     font-size: 17px;
-    padding: 0em 7em 0em 7em;
-    /* margin-top: 5%; */
     margin-bottom: 5%;
 }
 
@@ -375,16 +378,7 @@ div.table-title {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
 }
-.floatedTableLeft {
-    float:left;
-    background:yellow;
-    margin-left:10%;
-}
-.floatedTableRight {
-    float:right;
-    background:yellow;
-    margin-right:10%;
-}
+ 
 th {
   color: white;
   background:#FCAB64;
@@ -409,7 +403,8 @@ th:last-child {
 
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
+
+
   color:#666B85;
   font-size:16px;
   font-weight:normal;
@@ -448,16 +443,12 @@ tr:last-child td:last-child {
 
 td {
   background:#FFFFFF;
-  padding:20px;
-  text-align:left;
   vertical-align:middle;
   font-weight:300;
-  font-size:18px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #C1C3D1;
-  padding: 10px; 
-border: 1px solid #ccc; 
-	text-align: center; 
+  padding: 10px;
+border: 1px solid #ccc;
+	text-align: center;
 	font-size: 18px;
 }
 
@@ -490,24 +481,24 @@ td.text-right {
 }
 
 
-table { 
-	width: 750px; 
-	border-collapse: collapse; 
+table {
+	width: 750px;
+	border-collapse: collapse;
 	margin:50px auto;
 	}
 
 
- td, th {  
-	padding: 10px; 
-	border: 1px solid #ccc; 
-	text-align: left; 
+ td, th {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: left;
 	font-size: 18px;
-	} 
+	}
 
 .labels tr td {
 	font-weight: bold;
 	color: #fff;
-} 
+}
 
 
 
@@ -540,3 +531,15 @@ table {
 
     background-color: #EDAFB8;
 }
+
+
+
+#divide {
+        border-radius: 25px;
+        width: 100%;
+        height: auto;
+
+}
+/* slideshow */
+
+
