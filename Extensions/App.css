@@ -2,18 +2,25 @@
 
 body {
     background-image: url('Images/cliffs2..jpg');
-    background-repeat: no-repeat;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
       font-size: 17px;
-    background-color: #EAE8FF;
+    background-color: #E8DDB5;
     color: #4A6FA5;
     background-repeat: no-repeat;
+
     background-attachment: fixed;
-    background-position: 50% 0%;
+    background-position: 50% 50%;
+    width: 100%;
+    height: auto;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;   
 
 
 }
+
 
 /* Googlemaps */
 #mask {
@@ -140,7 +147,6 @@ footer {
 #jumbo { 
     border-width: 2em;
     background-image:url("Images/yes.jpg");
-    color: #EAE8FF;
    
 
     background-position: center;
@@ -226,7 +232,7 @@ footer {
     text-align: left;
     color: #4A6FA5;
     font-size: 17px;
-    padding: 5em 7em 0em 7em;
+    padding: 10% 10%;
     margin-top: 7em;
     margin-bottom: 0em;
 
@@ -327,8 +333,6 @@ img {
       text-align: left;
     color: #4A6FA5;
     font-size: 17px;
-    padding: 0em 7em 0em 7em;
-    /* margin-top: 5%; */
     margin-bottom: 5%;
 }
 
@@ -475,8 +479,10 @@ td.text-right {
 
 
 
-img {
+#divide {
         border-radius: 25px;
+        width: 100%;
+        height: auto;
 
 }
 /* slideshow */
