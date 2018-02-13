@@ -19,12 +19,11 @@ function closeNav() {
 // IMAGE
 
 
-
-
-
-
 $(document).ready(function() {
-    $('[data-toggle="toggle"]').change(function(){
-        $(this).parents().next('.hide').toggle();
+    // $('[data-toggle="toggle"]').change(function(){
+    //     $(this).parents().next('.hide').toggle();
+    // });
+    $('table.courses').find("tr.labels").on("click", function () {
+        $(this).nextUntil('tr.labels').toggle();
     });
 });

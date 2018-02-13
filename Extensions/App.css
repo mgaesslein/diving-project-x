@@ -635,7 +635,19 @@ td, th {
     color: #fff;
 }
 
+.labels div {
+    position: relative;
+}
 
+.labels .fa-plus {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+table.courses tr:not(.labels) {
+    display: none;
+}
 
 [data-toggle="toggle"] {
     display: none;
