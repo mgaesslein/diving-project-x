@@ -140,17 +140,19 @@ footer {
     height: 100px;
     width: 100%;    
     text-align: center;
-    margin-top: 100em;
+    font-weight: bold;
 }
 
 
 #jumbo { 
     border-width: 2em;
-    background-image:url("Images/yes.jpg");
+    background-image:url("Images/footer.jpg");
    
 
-    background-position: center;
-    /* margin-top: 5em; */
+    /* background-position: center; */
+    margin-top: 6%;
+    opacity: 0.8;
+    background-color: #EBEBEB;
 }
 
 #myFooter ul {
@@ -189,31 +191,8 @@ footer {
     transition: 0.2s;
 }
 
- .social-networks a:hover {
-    text-decoration: none;
-}
 
-.facebook:hover {
-    color: #0077e2;
-}
 
-.google:hover {
-    color: #ef1a1a;
-}
-
-.twitter:hover {
-    color: #00aced;
-}
-
-#myFooter .footer-copyright p {
-    padding-top: 0%;
-
-}
-
-#myFooter {
-
-    margin-top: 5em;
-}
 
 
 /* End footer */
@@ -487,7 +466,7 @@ td.text-right {
 /* slideshow */
 
 
-*** Table Styles **/
+/* *** Table Styles ** */
 
 .table-fill {
     background: #FCAB64;
@@ -511,6 +490,7 @@ td.text-right {
     background:yellow;
     margin-right:10%;
 }
+
 th {
     color: white;
     background:#FCAB64;
@@ -535,7 +515,6 @@ th:last-child {
 
 tr {
     border-top: 1px solid #C1C3D1;
-    border-bottom-: 1px solid #C1C3D1;
     color:#666B85;
     font-size:16px;
     font-weight:normal;
