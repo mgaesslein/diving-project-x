@@ -19,7 +19,7 @@
           crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Work+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Extensions/App.css">
-
+    
 
 </head>
 
@@ -160,19 +160,25 @@
     </div>
 
     <div class="jumbotron">
-        <table class="courses">
+        <table>
+            <thead>
+            <tr>
+                <th>Type</th>
+
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            </thead>
             <tbody>
-            <tr class="labels">
+            <tbody class="labels">
+            <tr>
                 <td colspan="3" id="dxp">
-                    <div>DivingExperience <i class="fas fa-plus"></i></div>
+                    <label for="divingexperience"><i class="fas fa-plus"></i>DivingExperience </label>
+                    <input type="checkbox" name="divingexperience" id="divingexperience" data-toggle="toggle">
                 </td>
             </tr>
-            <tr>
-                <td>Type</td>
-
-                <td>Description</td>
-                <td>Price</td>
-            </tr>
+            </tbody>
+            <tbody class="hide" class="invisible" style="display:none">
             <tr>
                 <td>Bubblemaker</td>
                 <td>An experience in the pool for children from 8y.half day</td>
@@ -186,17 +192,16 @@
 
 
             </tr>
-            <tr class="labels">
+            </tbody>
+            <tbody class="labels">
+            <tr>
                 <td colspan="3" id="dcc">
-                    <div>Diving Courses <i class="fas fa-plus"></i></div>
+                    <label for="divingcourses"><i class="fas fa-plus"></i>Diving Courses </label>
+                    <input type="checkbox" name="divingcourses" id="divingcourses" data-toggle="toggle">
                 </td>
             </tr>
-            <tr>
-                <td>Type</td>
-
-                <td>Description</td>
-                <td>Price</td>
-            </tr>
+            </tbody>
+            <tbody class="hide" class="invisible" style="display:none">
             <tr>
                 <td>Scuba Diver/Junior</td>
                 <td>Learn the fundamentals of scuba Diving and earn a certificate! (2 Days)</td>
@@ -227,19 +232,23 @@
                 <td>Become a safer diver by learning how to respond in a serieus but fun course! (3 days)</td>
                 <td>375€</td>
             </tr>
-            <tr class="labels">
+
+            </tbody>
+            </tbody>
+
+            <tbody class="labels">
+            <tr>
                 <td colspan="3" id="facc">
-                    <div>First Aid Courses
-                        <i class="fas fa-plus"></i>
-                    </div>
+                    <label for="FirstAidCourses"><i class="fas fa-plus"></i>First Aid Courses
+                        </i>
+                    </label>
+                    <input type="checkbox" name="FirstAidCourses" id="FirstAidCourses" data-toggle="toggle">
                 </td>
             </tr>
-            <tr>
-                <td>Type</td>
-
-                <td>Description</td>
-                <td>Price</td>
+            </tbody>
             </tr>
+            </tbody>
+            <tbody class="hide" class="invisible" style="display:none">
             <tr>
                 <td>Emergency First Response Primary and Secondary Care</td>
                 <td>A full day that teaches you basics and advanced skills to react in emergency situations/
@@ -271,19 +280,20 @@
                 <td>1 day to become able to teach others how to react in an emergencie!</td>
                 <td>400€</td>
             </tr>
-            <tr class="labels">
+            </tbody>
+            <tbody class="labels">
+            <tr>
                 <td colspan="3" id="spec">
-                    <div>Specialty Courses
-                        <i class="fas fa-plus"></i>
-                    </div>
+                    <label for="SpecialtyCourses"><i class="fas fa-plus"></i>Specialty Courses
+                        
+                    </label>
+                    <input type="checkbox" name="SpecialtyCourses" id="SpecialtyCourses" data-toggle="toggle">
                 </td>
             </tr>
-            <tr>
-                <td>Type</td>
-
-                <td>Description</td>
-                <td>Price</td>
+            </tbody>
             </tr>
+            </tbody>
+            <tbody class="hide" class="invisible" style="display:none">
             <tr>
                 <td>Deep Diver</td>
                 <td>Start exploring the depths up untill 40m! (2 days)</td>
@@ -345,19 +355,20 @@
                 <td>135€</td>
             </tr>
 
-            <tr class="labels">
+            </tbody>
+            <tbody class="labels">
+            <tr>
                 <td colspan="3" id="tec">
-                    <div>Technical Courses
-                        <i class="fas fa-plus"></i>
-                    </div>
+                    <label for="TechnicalDiving"><i class="fas fa-plus"></i>Technical Courses
+                       
+                    </label>
+                    <input type="checkbox" name="TechnicalDiving" id="TechnicalDiving" data-toggle="toggle">
                 </td>
             </tr>
-            <tr>
-                <td>Type</td>
-
-                <td>Description</td>
-                <td>Price</td>
+            </tbody>
             </tr>
+            </tbody>
+            <tbody class="hide" class="invisible" style="display:none">
             <tr>
                 <td>Discover Tec</td>
                 <td>Want to learn what it is about? But not yet sure if you like it? Then this course is
@@ -416,19 +427,18 @@
                 <td>325€</td>
             </tr>
 
-            <tr class="labels">
+            </tbody>
+            <tbody class="hide" class="invisible" style="display:none">
+            <tr>
                 <td colspan="3" id="fun">
-                    <div>Diving Activities ( Certificated divers)
-                        <i class="fas fa-plus"></i>
-                    </div>
+                    <label for="Fundiving"><i class="fas fa-plus"></i>Diving Activities ( Certificated divers)
+                        
+                    </label>
+                    <input type="checkbox" name="Fundiving" id="Fundiving" data-toggle="toggle">
                 </td>
             </tr>
-            <tr>
-                <td>Type</td>
-
-                <td>Description</td>
-                <td>Price</td>
-            </tr>
+            </tbody>
+            <tbody style="display:none">
             <tr>
                 <td>1 Dive Boat (equipment not included)</td>
                 <td>Morning</td>
@@ -529,8 +539,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="name">
+                                    Subject</label>
+                                <input type="text"  name="subject" class="form-control" id="name" placeholder="Enter name"
+                                       required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">
                                     Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter name"
+                                <input type="text"  name="name" class="form-control" id="name" placeholder="Enter name"
                                        required="required"/>
                             </div>
                             <div class="form-group">
@@ -540,31 +556,24 @@
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                    <input  type="text" name="email" class="form-control" id="email" placeholder="Enter email"
                                            required="required"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="subject">
-                                    Subject</label>
-                                <select id="subject" name="subject" class="form-control" required="required">
-                                    <option value="na" selected="">Choose One:</option>
-                                    <option value="service">Questions</option>
-                                    <option value="suggestions">Suggestions</option>
-                                    <option value="product">Bookings</option>
-                                </select>
+                                
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="name">
                                     Message</label>
-                                <textarea name="message" id="message" class="form-control" rows="9" cols="25"
+                                <textarea type="text" name="message" id="message" class="form-control" rows="9" cols="25"
                                           required="required" placeholder="Message"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            <button type="submit" name"submit" class="btn btn-primary pull-right" id="btnContactUs">
                                 Send Message
                             </button>
                         </div>
@@ -574,6 +583,12 @@
             </div>
         </div>
 
+
+    </div>
+</div>
+
+
+</div>
 
     </div>
 </div>
@@ -623,7 +638,7 @@
                             <i class="fa fa-twitter"></i>
                         </a>
                         <a href="#" class="facebook">
-                            <i class="fa fa-facebook"></i>
+                        <i class="fab fa-facebook"></i>
                         </a>
                         <a href="#" class="google">
                             <i class="fa fa-google-plus"></i>
@@ -647,13 +662,16 @@
 
 <link rel="stylesheet" type="text/css" media="screen" href="Extensions/App.css"/>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/0bb5c2e46e.js"></script>
 
 <script src="Extensions/Javascript.js"></script>
 
