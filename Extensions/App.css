@@ -211,7 +211,6 @@ footer {
     color: #4A6FA5;
     font-size: 17px;
     padding: 10% 10%;
-    margin-top: 7em;
     margin-bottom: 0em;
 
 }
@@ -666,3 +665,7 @@ table.courses tr:not(.labels) {
 
 }
 /* slideshow */
+#carousel { 
+    color: #EDAFB8;
+
+}
