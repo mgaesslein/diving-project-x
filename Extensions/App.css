@@ -16,7 +16,7 @@ body {
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
-    background-size: cover;
+    background-size: cover;   
 
 
 }
@@ -48,7 +48,7 @@ body {
     text-decoration-style: solid;
     text-decoration-color: antiquewhite;
      color: #4A6FA5;
- padding-top: 10%;
+ padding-top: 10%; 
     padding-bottom: 10%;
 	/* text-shadow: 0px 4px 3px white,
 	0px 8px 13px white,
@@ -60,9 +60,9 @@ body {
 a {
 
     color: #4F6D7A;
-
+    
 }
-
+    
 .logo-main {
     image-orientation: center;
 }
@@ -75,21 +75,21 @@ a {
     position: fixed;
     image-orientation: top;
     text-align: center;
-
+    
    width: 100%;
 
 }
 
 
-a:hover {
+a:hover { 
     /* background-color: #BFC0C0; */
-    color: white;
+    color: white; 
 }
 
 
 ul a {
     color: #FCAB64;
-
+  
 }
 button {
     background-color: grey;
@@ -138,16 +138,16 @@ footer {
     background-color: #EAE8FF;
     bottom: 0;
     height: 100px;
-    width: 100%;
+    width: 100%;    
     text-align: center;
     margin-top: 100em;
 }
 
 
-#jumbo {
+#jumbo { 
     border-width: 2em;
     background-image:url("Images/yes.jpg");
-
+   
 
     background-position: center;
     /* margin-top: 5em; */
@@ -227,8 +227,7 @@ footer {
 
 /* frontpage */
 #Frontjumbo {
-    /* background-color: #EAE8FF; */
-
+    
     text-align: left;
     color: #4A6FA5;
     font-size: 17px;
@@ -247,7 +246,7 @@ h3 {
 
 hr {
         color: #FCAB64;
-
+       
 
 }
 
@@ -374,7 +373,7 @@ div.table-title {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
 }
-
+ 
 th {
   color: white;
   background:#FCAB64;
@@ -391,12 +390,12 @@ th {
 th:first-child {
   border-top-left-radius:3px;
 }
-
+ 
 th:last-child {
   border-top-right-radius:3px;
   border-right:none;
 }
-
+  
 tr {
   border-top: 1px solid #C1C3D1;
 
@@ -406,13 +405,13 @@ tr {
   font-weight:normal;
   text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
 }
-
+ 
 tr:hover td {
   background:#9A9BAB;
   color:#FFFFFF;
   border-top: 1px solid white;
 }
-
+ 
 tr:first-child {
   border-top:none;
 }
@@ -420,11 +419,11 @@ tr:first-child {
 tr:last-child {
   border-bottom:none;
 }
-
+ 
 tr:nth-child(odd) td {
   background:#EBEBEB;
 }
-
+ 
 tr:nth-child(odd):hover td {
   background:#9A9BAB;
 }
@@ -432,11 +431,11 @@ tr:nth-child(odd):hover td {
 tr:last-child td:first-child {
   border-bottom-left-radius:3px;
 }
-
+ 
 tr:last-child td:last-child {
   border-bottom-right-radius:3px;
 }
-
+ 
 td {
   background:#FFFFFF;
   padding:20px;
@@ -476,7 +475,19 @@ td.text-right {
   text-align: right;
 }
 
-/*** Table Styles **/
+
+
+
+#divide {
+        border-radius: 25px;
+        width: 100%;
+        height: auto;
+
+}
+/* slideshow */
+
+
+*** Table Styles **/
 
 .table-fill {
     background: #FCAB64;
@@ -664,5 +675,3 @@ td, th {
 
 }
 /* slideshow */
-
-
