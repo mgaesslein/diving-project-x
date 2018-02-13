@@ -30,5 +30,20 @@ body {
  opacity: 0.8;
 }
 
+
+.jumbotron {
+    margin-top: 50px;
+    font-size: 21px;
+    padding: 0%;
+    padding-bottom: 5% ;
+    text-align: center;
+
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
   
 
