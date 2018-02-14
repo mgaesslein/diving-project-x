@@ -20,6 +20,8 @@ body {
 }
 
 
+
+
 /* Googlemaps */
 #mask {
     overflow: hidden;
@@ -96,16 +98,15 @@ button {
 
 
 h1 {
-    text-align: center;
     font-weight: bold;
-    text-decoration-style: solid;
-    text-decoration-color: antiquewhite;
-    color: #FCAB64;
+    color: grey;
     padding-top: 20%;
-    padding-bottom: 20%;
 	text-shadow: 0px 4px 3px white,
-	0px 8px 13px white,
-	0px 18px 28px grey;
+	0px 8px 13px grey,
+    0px 18px 28px grey;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 65px;
+
 }
 
 h4 {
@@ -296,6 +297,7 @@ div.table-title {
 h2 {
     color: white;
 }
+
 .table-fill {
   background: #FCAB64;
   border-radius:3px;
