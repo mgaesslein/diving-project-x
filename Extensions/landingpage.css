@@ -12,29 +12,28 @@ body {
 
 
  .jumbotron {    
- opacity: 0.8;
-   margin-top: 50px;
-    font-size: 21px;
-    padding: 0%;
-    padding-bottom: 5% ;
+  opacity: 0.8;
+  margin-top: 50px;
+  font-size: 21px;
+  padding: 0%;
+   padding-bottom: 5% ;
     text-align: center;
 }
 
 
 .jumbotron h1 {
   
-      font-weight: bold;
+    font-weight: bold;
+    color: #FCAB64;
 	text-shadow: 0px 4px 3px white,
 	0px 8px 13px white,
     0px 18px 28px grey;
-   font-family: 'Josefin Sans', sans-serif;
-   font-size: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
 
 
 
 }
-
-
 
 
 
