@@ -65,8 +65,10 @@ a {
 }
 #navHello2 {
     z-index: 1;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+
     margin-top: 1% !important;
     padding: 15;
     position: fixed;
@@ -629,4 +631,19 @@ table.courses tr:not(.labels) {
 /* slideshow */
 
 
+
+
+
+.zoom {
+
+    transition: transform .2s;
+    margin-left: 1%;
+ 
+
+}
+
+
+.zoom:hover {
+    transform: scale(1.3); 
+}
 
