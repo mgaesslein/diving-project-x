@@ -1,32 +1,22 @@
 body {
     
-    background-image: url('Images/cliffs2..jpg');
-    
+    background-image: url('Images/ban.jpg');
     font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Work Sans', sans-serif;
     font-size: 17px;
-    background-color: #E8DDB5;
     color: #4A6FA5;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
     background-position: 50% 50%;
     width: 100%;
     height: auto;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;   
+    
 
 
 }
 
 
 
-
-        .jumbotron {
-       background-color: #E8DDB5
- !important; 
+ .jumbotron {    
  opacity: 0.8;
 }
 
@@ -38,11 +28,25 @@ body {
     padding-bottom: 5% ;
     text-align: center;
 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+
+}
+
+
+
+
+
+
+.zoom {
+
+    transition: transform .2s;
+    margin-left: 1%;
+ 
+
+}
+
+
+.zoom:hover {
+    transform: scale(1.3); 
 }
 
   
