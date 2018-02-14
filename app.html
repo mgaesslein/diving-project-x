@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Work+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Extensions/App.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -30,9 +31,6 @@
 
 <nav class="navbar navbar-expand-lg" id="navHello2">
     <header role="banner">
-        <!-- <img id="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200"
-             alt="Logo Thing main logo"> -->
-
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false"
@@ -44,8 +42,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link zoom" href="app.html">|Home|
-                        <span class="sr-only">(current)</span>
+                    <a class="nav-link zoom" id="home" href="app.html">|Home|
+                       
                     </a>
                 </li>
                 <li class="nav-item">
@@ -74,7 +72,7 @@
 
 
                     <h1 class="w3-center w3-animate-top">Algarve Diving Adventures</h1>
-                    <hr>
+                  
 
 
                 </div>
@@ -208,7 +206,8 @@ really?
         <hr>
     </div>
 <hr>
-        <table id="table" class="courses table ">
+
+        <table id="table" class="courses table tbody">
             <tbody>
             <tr class="labels">
                 <td colspan="3" id="dxp">
@@ -557,18 +556,16 @@ really?
 
 
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <container>
-                    <div id="mask">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.217004838742!2d-8.930914162130403!3d37.00999359707381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9aed17ccc253766f!2sMAR+ILIMITADO!5e0!3m2!1sfr!2sbe!4v1516203768080"
-                                width="500" height="500" frameborder="0" scrolling="no" marginheight="0"
-                                marginwidth="0"></iframe>
-                    </div>
-                </container>
+    <div class="container cmap">
+        <div class="row ">
+            <div class="col-sm-6">
+                <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.9740991127437!2d-8.932595684897624!3d37.010414263538266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b4c7bdf456729%3A0x9aed17ccc253766f!2sMAR+ILIMITADO!5e0!3m2!1sfr!2sfr!4v1518642603510"
+            width="600" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>        
+        </container>
             </div>
-            <div class="col">
+            <div class="col-sm-6">
                 <!-- <h4>Where to find us and Contact</h4> -->
 
                 <form>
@@ -611,7 +608,7 @@ really?
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            <button type="submit" class="zoom btn btn-primary pull-right" id="btnContactUs">
                                 Send Message
                             </button>
                         </div>
@@ -639,16 +636,16 @@ really?
             <div class="col"><h5>Links</h5>
                 <ul>
                     <li>
-                        <a href="app.html">Home</a>
+                        <a href="app.html" class="zoom">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#dive_sites">Dive sites</a>
+                        <a class="nav-link zoom" href="#dive_sites">Dive sites</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#courses_prices">Courses&Prices</a>
+                        <a class="nav-link zoom" href="#courses_prices">Courses&Prices</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link zoom" href="#contact">Contact</a>
                     </li>
 
 
@@ -666,7 +663,7 @@ really?
                 <div class="social-networks">
 
                     <ul>
-                        <a href="#" class="twitter">
+                        <a href="#" class="instagram">
                             <i class="fab fa-instagram"></i>
 
                         </a>

@@ -20,26 +20,58 @@ body {
 }
 
 
+/* Headers */
+
+
+h1 {
+    font-weight: bold;
+    color: #FCAB64;
+
+    padding-top: 20%;
+	text-shadow: 0px 4px 3px white,
+	0px 8px 13px white;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 65px;
+
+}
+
+h4 {
+    color: #273469;
+
+}
+
+
+/* Links */
+
+a {
+
+    color: #4F6D7A;
+    
+}
+   
+
+
 
 
 /* Googlemaps */
-#mask {
-    overflow: hidden;
-    border-radius: 10%;
-    position: relative;
-    z-index: 99;
-    height: 500px;
-    width: 500px;
-    border: 2px solid #000;
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
-#mask iframe {
-    position: absolute;
-    border-radius: 10%;
-    top: 0; left: 0;
-    z-index: 50;
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
-
+.cmap {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
 /* End of google maps */
 
 
@@ -54,12 +86,7 @@ body {
 
 
 }
-a {
-
-    color: #4F6D7A;
-    
-}
-    
+ 
 .logo-main {
     image-orientation: center;
 }
@@ -74,9 +101,12 @@ a {
     position: fixed;
     image-orientation: top;
     text-align: center;
-    
    width: 100%;
 
+}
+
+#home {
+    color: white;
 }
 
 
@@ -99,22 +129,6 @@ button {
 }
 
 
-h1 {
-    font-weight: bold;
-    color: grey;
-    padding-top: 20%;
-	text-shadow: 0px 4px 3px white,
-	0px 8px 13px grey,
-    0px 18px 28px grey;
-   font-family: 'Josefin Sans', sans-serif;
-   font-size: 65px;
-
-}
-
-h4 {
-    color: #273469;
-
-}
 
 
 
@@ -274,6 +288,11 @@ img {
 
 
 /* TABLES */
+.tbody {
+ margin-top: 5%;
+ margin-bottom: 15%;
+
+}
 
 
 div.table-title {
@@ -283,6 +302,7 @@ div.table-title {
   padding:5px;
   width: 100%;
 }
+
 
 .table-title h3 {
    color: #FCAB64;
@@ -303,7 +323,6 @@ h2 {
 .table-fill {
   background: #FCAB64;
   border-radius:3px;
-  border-collapse: collapse;
   height: 320px;
   margin: auto;
   max-width: 600px;
@@ -423,7 +442,7 @@ td.text-right {
         height: auto;
 
 }
-/* slideshow */
+
 
 
 /* *** Table Styles ** */
