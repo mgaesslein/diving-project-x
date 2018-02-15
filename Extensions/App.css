@@ -19,6 +19,10 @@ body {
 
 }
 
+h3 {
+    color: #8DAA9D;
+}
+
 
 /* Headers */
 
@@ -32,6 +36,7 @@ h1 {
 	0px 8px 13px white;
    font-family: 'Josefin Sans', sans-serif;
    font-size: 65px;
+   padding-bottom: 20%;
 
 }
 
@@ -80,22 +85,19 @@ a {
     text-decoration-style: solid;
     text-decoration-color: antiquewhite;
      color: #4A6FA5;
- padding-top: 10%; 
+    padding-top: 10%; 
     padding-bottom: 10%;
     font-weight: bold;
 
 
 }
  
-.logo-main {
-    image-orientation: center;
-}
+
 #navHello2 {
     z-index: 1;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
-
     margin-top: 1% !important;
     padding: 15;
     position: fixed;
@@ -140,27 +142,34 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
+
 footer {
-    position: absolute;
     left: 0;
     color: #FCAB64;
-    bottom: 0;
-    height: 100px;
+    /* height: 100px; */
     width: 100%;    
     text-align: center;
     font-weight: bold;
+    border-width: 2em;
+    background-color: #EBEBEB;
+     background: url('Images/Footer.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+    
+    
+}
+
+
+#copy {
+    text-align: center;
+    color: white;
 }
 
 
 #jumbo { 
-    border-width: 2em;
-    background-image:url("Images/footer.jpg");
-    margin-top: 6%;
-    opacity: 0.8;
-    background-color: #EBEBEB;
+   
 }
 
 #myFooter ul {
@@ -212,15 +221,16 @@ footer {
 
 
 
+
 /* frontpage */
-#Frontjumbo {
+.jumbotron {
     
     text-align: left;
     color: #4A6FA5;
     font-size: 17px;
     padding: 10% 10%;
-    margin-bottom: 0em;
-
+    background-color: #FBF5F3;
+    margin-bottom: 0;
 }
 
 /* front */
@@ -243,14 +253,6 @@ img {
     padding-bottom: 5%;
 }
 
-.jumbotron {
-    margin-top: 50px;
-    font-size: 21px;
-    padding: 0%;
-    padding-bottom: 5% ;
-    text-align: center;
-
-}
 
 
 
@@ -278,12 +280,6 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.textblock {
-      text-align: left;
-    color: #4A6FA5;
-    font-size: 17px;
-    margin-bottom: 5%;
-}
 
 
 
@@ -649,8 +645,12 @@ table.courses tr:not(.labels) {
 
 /* slideshow */
 
-
-
+.carousel-control-prev-icon {
+    color: blue;
+}
+ol.carousel-indicators li.active {
+  background: yellow;
+}
 
 
 .zoom {
@@ -664,5 +664,48 @@ table.courses tr:not(.labels) {
 
 .zoom:hover {
     transform: scale(1.3); 
+}
+
+
+/* Parallax + shit */
+.parallex {
+    background: url('Images/Div.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    /* z-index: 1; */
+    text-align: center;
+    padding: 150px 400px;
+ 
+
+
+}
+
+.CP {
+        background: url('Images/strangefish.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    /* z-index: 1; */
+    text-align: center;
+    padding: 150px 400px;
+    ;
+
+
+}
+
+.LC {
+        background: url('Images/nice.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    /* z-index: 1; */
+    text-align: center;
+    padding: 150px 400px;
+    ;
+    
+
+
+
 }
 
