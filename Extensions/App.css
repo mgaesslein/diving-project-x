@@ -85,22 +85,19 @@ a {
     text-decoration-style: solid;
     text-decoration-color: antiquewhite;
      color: #4A6FA5;
- padding-top: 10%; 
+    padding-top: 10%; 
     padding-bottom: 10%;
     font-weight: bold;
 
 
 }
  
-.logo-main {
-    image-orientation: center;
-}
+
 #navHello2 {
     z-index: 1;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
-
     margin-top: 1% !important;
     padding: 15;
     position: fixed;
@@ -145,26 +142,34 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
+
 footer {
-    position: absolute;
     left: 0;
     color: #FCAB64;
-    bottom: 0;
-    height: 100px;
+    /* height: 100px; */
     width: 100%;    
     text-align: center;
     font-weight: bold;
+    border-width: 2em;
+    background-color: #EBEBEB;
+     background: url('Images/Footer.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+    
+    
+}
+
+
+#copy {
+    text-align: center;
+    color: white;
 }
 
 
 #jumbo { 
-    border-width: 2em;
-    background-image:url("Images/footer.jpg");
-    opacity: 0.8;
-    background-color: #EBEBEB;
+   
 }
 
 #myFooter ul {
@@ -698,12 +703,9 @@ ol.carousel-indicators li.active {
     text-align: center;
     padding: 150px 400px;
     ;
+    
+
 
 
 }
 
-.containerPar{
-  
-    margin: 0 auto;
-    /* padding: 25px; */
-}
