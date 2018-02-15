@@ -48,16 +48,6 @@ h4 {
 
 /* Links */
 
-a {
-
-    color: #4F6D7A;
-    
-}
-   
-
-
-
-
 /* Googlemaps */
 .map-responsive{
     overflow:hidden;
@@ -162,15 +152,6 @@ footer {
 }
 
 
-#copy {
-    text-align: center;
-    color: white;
-}
-
-
-#jumbo { 
-   
-}
 
 #myFooter ul {
     list-style-type: none;
@@ -186,14 +167,9 @@ footer {
 }
 #myFooter a:hover,
 #myFooter a:focus {
-    text-decoration: none;
     color: white;
 }
 
-#frow {
-    padding: 10 10;
-    margin: 10 10;
-}
 
 .social-networks {
     text-align: center;
@@ -205,22 +181,11 @@ footer {
     font-size: 32px;
     color: #f9f9f9;
     padding: 10px;
-    transition: 0.2s;
 }
-
-
 
 
 
 /* End footer */
-
-
-#contact {
-    padding: 300 20;
-}
-
-
-
 
 /* frontpage */
 .jumbotron {
@@ -235,50 +200,9 @@ footer {
 
 /* front */
 
-h3 {
-    color: #FCAB64;
-}
-
-
-hr {
-        color: #FCAB64;
-       
-
-}
-
-
-
-img {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-
-
-
-.banner {
-
-    padding-top: 5em;
-    padding-bottom: 5em;
-
-
-}
-
 
 
 /* Image banners */
-
-.Imagecontainer {
-    position: relative;
-    text-align: center;
- }
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 
 
@@ -675,8 +599,7 @@ ol.carousel-indicators li.active {
     height: 450px;
     /* z-index: 1; */
     text-align: center;
-    padding: 150px 400px;
- 
+   padding-top: 3%;
 
 
 }
@@ -688,8 +611,8 @@ ol.carousel-indicators li.active {
     height: 450px;
     /* z-index: 1; */
     text-align: center;
-    padding: 150px 400px;
-    ;
+    padding-top: 3%;
+    
 
 
 }
@@ -701,11 +624,10 @@ ol.carousel-indicators li.active {
     height: 450px;
     /* z-index: 1; */
     text-align: center;
-    padding: 150px 400px;
-    ;
-    
-
-
-
+    padding-top: 3%;
+       
 }
+   
+
+
 
