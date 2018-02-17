@@ -1,4 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'lib/PHPMailer/src/Exception.php';
+require 'lib/PHPMailer/src/PHPMailer.php';
+require 'lib/PHPMailer/src/SMTP.php';
+
 if (isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "aljaz.gantar94@gmail.com";
@@ -63,7 +70,35 @@ if (isset($_POST['email'])) {
     $headers = 'From: ' . $email_from . "\r\n" .
         'Reply-To: ' . $email_from . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
+
+    $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+    try {
+        //Server settings
+        $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'gaesslein.net';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'test@gaesslein.net';                 // SMTP username
+        $mail->Password = 'abcdefg123';                           // SMTP password
+        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;                                    // TCP port to connect to
+
+        //Recipients
+        $mail->setFrom('test@gaesslein.net', 'Mailer');
+        $mail->addAddress('aljaz.gantar94@gmail.com', 'Joe User');     // Add a recipient
+        $mail->addReplyTo($email_from, $name);
+
+        //Content
+        $mail->isHTML(false);                                  // Set email format to HTML
+        $mail->Subject = 'New Contact Form Email';
+        $mail->Body    = $email_message;
+
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+    }
+
     ?>
      
     <!-- include your own success html here -->
