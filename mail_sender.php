@@ -5,17 +5,15 @@ use PHPMailer\PHPMailer\Exception;
 require 'lib/PHPMailer/src/Exception.php';
 require 'lib/PHPMailer/src/PHPMailer.php';
 require 'lib/PHPMailer/src/SMTP.php';
-print_r($_POST);
+
 if (isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "aljaz.gantar94@gmail.com";
-    $email_subject = "Something random";
     
-    echo 'test';
-
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
     $message = $_POST['message']; // required
+    $subject = $_POST['subject']; // required
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -47,7 +45,8 @@ if (isset($_POST['email'])) {
         return str_replace($bad, "", $string);
     }
 
-    $email_message .= "First Name: " . clean_string($name) . "\n";
+    $email_message .= "Subject: " . clean_string($subject) . "\n";
+    $email_message .= "Name: " . clean_string($name) . "\n";
     $email_message .= "Email: " . clean_string($email_from) . "\n";
     $email_message .= "message: " . clean_string($message) . "\n";
 
@@ -55,7 +54,7 @@ if (isset($_POST['email'])) {
     $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
     try {
         //Server settings
-        $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+        $mail->SMTPDebug = 0;                                 // Enable verbose debug output
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'gaesslein.net';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -63,10 +62,18 @@ if (isset($_POST['email'])) {
         $mail->Password = 'abcdefg123';                           // SMTP password
         // $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 25;                                    // TCP port to connect to
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );  
 
         //Recipients
         $mail->setFrom('test@gaesslein.net', 'Mailer');
-        $mail->addAddress('aljaz.gantar94@gmail.com', 'Joe User');     // Add a recipient
+        $mail->addAddress($email_to);     // Add a recipient
+        $mail->addAddress('mgaesslein@gmail.com');     // Add a recipient
         $mail->addReplyTo($email_from, $name);
 
         //Content
@@ -75,9 +82,9 @@ if (isset($_POST['email'])) {
         $mail->Body    = $email_message;
 
         $mail->send();
-        echo 'Message has been sent';
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        die();
     }
 
     ?>
